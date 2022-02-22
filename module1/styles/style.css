@@ -11,13 +11,16 @@
     color: #4B5D68;
 }
 
-body {
+html {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
-.container {
+.wrapper {
     max-width: 1120px;
     margin: 0 auto;
+    padding: 60px 20px;
+    box-sizing: content-box;
 }
 
 .title {
@@ -44,7 +47,6 @@ body {
 /*----- HEADER -----*/
 
 .header {
-    margin-top: 60px;
     margin-bottom: 140px;
 }
 
@@ -68,6 +70,11 @@ body {
     font-size: 16px;
 }
 
+.header-nav__item:hover {
+    transition: all .5s;
+    transform: scale(1.5);
+}
+
 .header-nav__item_active {
     color: #212353;
     font-weight: 700;
@@ -82,7 +89,7 @@ body {
 }
 
 .promo__container {
-    height: 530px;
+    min-height: 530px;
 }
 
 .promo__title {
@@ -102,10 +109,16 @@ body {
     background: #9C69E2;
     border-radius: 50px;
     border: none;
-    color: #FFF;
+    color: #fff;
     font-size: 18px;
     font-weight: 700px;
     cursor: pointer;
+}
+
+.promo__button:hover {
+    background: #fff;
+    color: #9C69E2;
+    border: 1px solid #9C69E2;;
 }
 
 .promo__banner {
@@ -139,12 +152,13 @@ body {
 }
 
 .about-company__img {
+    width: 45%;
     max-width: 469px;
     max-height: 496px;
 }
 
 .about-company__information {
-    width: 475px;
+    max-width: 475px;
     margin-left: 65px;
 }
 
@@ -245,12 +259,19 @@ body {
     font-weight: 700;
     color:#212353;
     letter-spacing: 0.005em;
+    cursor: pointer;
+}
+
+.features-item__link:hover {
+    transition: all .5s;
+    transform: skewX(-20deg);
 }
 
 .features-item__link::after {
     content: url('./../assets/icons/arrow-right.svg');
     vertical-align: middle;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 /*----- SECTION FEATURES -----*/
@@ -267,7 +288,6 @@ body {
     border-radius: 50px;
     padding: 110px 80px 50px 90px;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -312,7 +332,6 @@ body {
     padding: 60px 70px 50px;
     min-width: 645px;
     box-shadow: 0px 20px 0px 0px #8b56db;
-
 }
 
 .slide__logo {
@@ -370,6 +389,11 @@ body {
     width: 5px;
 }
 
+.slider-nav__circles div:not(.slider-nav-circles__item_active):hover {
+    transition: all .5s;
+    transform: scale(3);
+}
+
 .slider-nav-circles__item_active {
     background: #F063B8;
     border-radius: 50%;
@@ -387,21 +411,22 @@ body {
     opacity: 0.5;
 }
 
+.slider-nav__arrows img:not(.slider-nav-arrows__item_active):hover {
+    opacity: 1;
+}
+
 .slider-nav-arrows__item_active {
     opacity: 1;
 }
 
 /*----- SECTION TESTIMONIALS -----*/
 
-/*----- SECTION FOOTER -----*/
-
-.footer {
-    margin-bottom: 65px;
-}
+/*----- FOOTER -----*/
 
 .footer__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contacts-head {
@@ -466,4 +491,4 @@ body {
     border-radius: 50%;
 }
 
-/*----- SECTION FOOTER -----*/
+/*----- FOOTER -----*/

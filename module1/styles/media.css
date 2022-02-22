@@ -1,0 +1,167 @@
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+    
+    /*----- COMMON STYLES -----*/
+
+    .wrapper {
+        padding: 60px 0;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    /*----- COMMON STYLES -----*/
+
+    /*----- SECTION PROMO -----*/
+    
+    .promo__container {
+        overflow: hidden;
+    }
+
+    .promo__img {
+        opacity: 0.2;
+    }
+
+    /*----- SECTION PROMO -----*/
+
+    /*----- SECTION ABOUT-COMPANY -----*/
+
+    .about-company__container, .testimonials__container {
+        border-radius: 0;
+    }
+
+    .about-company__container {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .about-company__information {
+        width: fit-content;
+        margin-left: 0;
+    }
+
+    /*----- SECTION ABOUT-COMPANY -----*/
+
+    /*----- SECTION FEATURES -----*/
+    
+    .features__list {
+        justify-content: center;
+    }
+
+    /*----- SECTION FEATURES -----*/
+
+    /*----- SECTION TESTIMONIALS -----*/
+
+    .testimonials__container {
+        padding-top: 0;
+        overflow: hidden;
+        border: 1px solid #9C69E2;
+        justify-content: space-evenly;
+    }
+
+    /*----- SECTION TESTIMONIALS -----*/
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+
+    /*----- COMMON STYLES -----*/
+
+    .text {
+        white-space: normal;
+    }
+
+    /*----- COMMON STYLES -----*/
+
+    /*----- HEADER -----*/
+
+    .header__container {
+        justify-content: space-between;
+    }
+    
+    .header__logo {
+        margin-right: 30px;
+    }
+
+    /*----- HEADER -----*/
+
+    /*----- SECTION PROMO -----*/
+
+    .promo__title {
+        font-size: 40px;
+    }
+
+    /*----- SECTION PROMO -----*/
+
+    /*----- SECTION ABOUT-COMPANY -----*/
+
+    .about-company__container {
+        position: relative;
+        justify-content: center;
+    }
+
+    .about-company__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0.3;
+    }
+
+    .about-company__information {
+        margin-left: 0;
+    }
+
+    /*----- SECTION ABOUT-COMPANY -----*/
+
+    /*----- SECTION FEATURES -----*/
+
+    .features__description {
+        width: 100%;
+    }
+
+    .features-item__img {
+        opacity: 0.1;
+    }
+
+    /*----- SECTION FEATURES -----*/
+
+    /*----- SECTION TESTIMONIALS -----*/
+
+    .testimonials {
+        margin-bottom: 100px;
+    }
+
+    .testimonials__slider {
+        min-height: 550px;
+    }
+
+    .slide {
+        padding: 50px 20px;
+    }
+
+    .slide, .slide_active {
+        min-width: calc(100vw - 40px);
+        display: block;
+    }
+
+    /*----- SECTION TESTIMONIALS -----*/
+
+    /*----- FOOTER -----*/
+
+    .footer__container {
+        justify-content: center;
+    }
+
+    .footer__contacts, .footer__social-media {
+        width: 100%;
+    }
+
+    .footer__social-media {
+        margin-top: 30px;
+    }
+
+    .social-media-icons {
+        width: 50%;
+    }
+
+    /*----- FOOTER -----*/
+}
