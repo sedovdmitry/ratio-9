@@ -111,6 +111,7 @@ html {
     border: none;
     color: #fff;
     font-size: 18px;
+/*TODO: значения для font-weight указываются без "px", это числа от 100 до 900, можно слова, например, bold, normal */
     font-weight: 700px;
     cursor: pointer;
 }
@@ -194,6 +195,8 @@ html {
 
 .features__description {
     width: 50%;
+/*TODO: не перезаписывайте свойства в одном блоке, margin можно заменить, например, так:
+       margin: 0 auto 50px; */
     margin: 0 auto;
     text-align: center;
     line-height: 29px;
@@ -323,6 +326,7 @@ html {
     border: 1px solid #9C69E2;;
     border-radius: 20px;
     display: flex;
+    /*TODO: не обязательно указывать нулевым значениям единицы измерения 0px -> 0 */
     box-shadow: 0px 20px 0px #9563e0;
 }
 
